@@ -18,7 +18,272 @@
             color: #333;
             line-height: 1.6;
         }
-        /* ... (rest of the CSS remains the same as in Sandeep's portfolio) ... */
+        .header {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #0062cc 0%, #0073e6 50%, #1a8cff 100%);
+            color: #fff;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 115, 230, 0.2);
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+        }
+        .header .profile-photo {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: linear-gradient(to right, #005bb5, #0073e6);
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 91, 181, 0.2);
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        .section {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .section h2 {
+            color: #0062cc;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e6f0ff;
+            padding-bottom: 0.5rem;
+        }
+        .floating-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin: 1.5rem 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .floating-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 24px rgba(0, 115, 230, 0.15);
+        }
+        .experience-item {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: #f8fbff;
+            border-radius: 8px;
+            border-left: 4px solid #0073e6;
+        }
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+        .experience-item h3 {
+            color: #0062cc;
+            margin-bottom: 0.5rem;
+        }
+        .experience-item ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        .experience-item li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .experience-item li:before {
+            content: "";
+            color: #0073e6;
+            font-weight: bold;
+            position: absolute;
+            left: -1.2rem;
+        }
+        .project-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f8fbff;
+            border-radius: 8px;
+            border-left: 4px solid #0073e6;
+        }
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+        .project-item h3 {
+            color: #0062cc;
+            margin-bottom: 0.5rem;
+        }
+        .project-item ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        .project-item li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .project-item li:before {
+            content: "";
+            color: #0073e6;
+            font-weight: bold;
+            position: absolute;
+            left: -1.2rem;
+        }
+      
+        .github-link {
+            background: linear-gradient(135deg, #0073e6, #0062cc);
+            color: #fff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 115, 230, 0.2);
+        }
+        .github-link:hover {
+            background: linear-gradient(135deg, #0062cc, #004494);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 115, 230, 0.3);
+        }
+        .github-link i {
+            font-size: 1.2rem;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #0073e6, #0062cc);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 115, 230, 0.2);
+        }
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #0062cc, #004494);
+            transform: translateY(-2px);
+        }
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 1px solid #e6f0ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+        #contact-form input:focus, #contact-form textarea:focus {
+            border-color: #0073e6;
+            box-shadow: 0 2px 12px rgba(0, 115, 230, 0.1);
+            outline: none;
+        }
+        .social-links {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #fff, #f8fbff);
+            margin: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .social-links h2 {
+            color: #0062cc;
+            margin-bottom: 1.5rem;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: #0073e6;
+            font-size: 2rem;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #004494;
+            transform: translateY(-3px);
+        }
+        .resume-section {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #fff, #f8fbff);
+            margin: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .resume-section h2 {
+            color: #0062cc;
+            margin-bottom: 1.5rem;
+        }
+        .download-btn {
+            background: linear-gradient(135deg, #0073e6, #0062cc);
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 115, 230, 0.2);
+        }
+        .download-btn:hover {
+            background: linear-gradient(135deg, #0062cc, #004494);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 115, 230, 0.3);
+        }
+        .download-btn i {
+            font-size: 1.2rem;
+        }
+        
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-status {
+        margin: 1rem 0;
+        padding: 0.5rem;
+        border-radius: 4px;
+        display: none;
+    }
+    
+    .form-status.success {
+        display: block;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    
+    .form-status.error {
+        display: block;
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+    
+    .loading-spinner {
+        margin-left: 0.5rem;
+    }
+    
+    .submit-btn:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }   
     </style>
 </head>
 <body>
